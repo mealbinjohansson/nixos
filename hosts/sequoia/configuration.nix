@@ -65,4 +65,5 @@
 
   # NOTE: My addition
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  hyprland.enable = true;
 }
