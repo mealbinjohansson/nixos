@@ -48,7 +48,12 @@
     isNormalUser = true;
     description = "Albin";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [
+      git
+      neovim
+      brightnessctl
+      fastfetch
+    ];
   };
 
   # Allow unfree packages
