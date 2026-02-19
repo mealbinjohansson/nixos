@@ -4,7 +4,10 @@
   };
   outputs = inputs@{ self, nixpkgs, ... }: {
     nixosConfigurations.sequoia = nixpkgs.lib.nixosSystem {
-      modules = [ ./configuration.nix ];
+      modules = [
+        ./hosts/sequoia/configuration.nix
+	./modules
+      ];
     };
   };
 }
