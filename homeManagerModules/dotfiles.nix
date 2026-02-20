@@ -7,7 +7,7 @@
 
   config = lib.mkIf config.dotfiles.neovim.enable {
     home.file.".config/nvim" = {
-      source = "${inputs.dotfiles}/nvim";
+      source = ../dotfiles/nvim;
       recursive = true;
     };
   };

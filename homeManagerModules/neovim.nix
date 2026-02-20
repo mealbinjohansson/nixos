@@ -10,6 +10,14 @@
       enable = true;
       package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
       defaultEditor = true;
+      plugins = with pkgs.vimPlugins; [ telescope-fzf-native-nvim ];
+      extraPackages = with pkgs; [
+        gcc
+        gnumake
+        fzf
+        ripgrep
+        lua-language-server
+      ];
     };
   };
 }

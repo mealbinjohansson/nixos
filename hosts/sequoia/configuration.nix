@@ -70,5 +70,4 @@
     enable = true;
     file = ./home.nix;
   };
-  neovim.enable = true;
 }

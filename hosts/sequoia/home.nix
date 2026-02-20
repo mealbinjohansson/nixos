@@ -8,5 +8,6 @@
   programs.home-manager.enable = true;
 
   # Modules
+  neovim.enable = true;
   dotfiles.neovim.enable = true;
 }
