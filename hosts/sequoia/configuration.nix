@@ -53,7 +53,6 @@
       brightnessctl
       fastfetch
       tmux
-      inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
     ];
   };
 
@@ -71,4 +70,5 @@
     enable = true;
     file = ./home.nix;
   };
+  neovim.enable = true;
 }
