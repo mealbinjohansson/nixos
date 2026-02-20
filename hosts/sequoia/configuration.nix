@@ -53,6 +53,8 @@
       brightnessctl
       fastfetch
       tmux
+      opencode
+      vim
     ];
   };
 
