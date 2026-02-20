@@ -5,8 +5,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dotfiles = {
+      url = "git+https://github.com/mealbinjohansson/dotfiles.git";
+      flake = false;
+    };
   };
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, dotfiles, ... }: {
     nixosConfigurations.sequoia = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
