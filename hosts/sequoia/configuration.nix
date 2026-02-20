@@ -66,4 +66,8 @@
   # NOTE: My addition
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   hyprland.enable = true;
+  home-manager = {
+    enable = true;
+    file = ./home.nix;
+  };
 }
