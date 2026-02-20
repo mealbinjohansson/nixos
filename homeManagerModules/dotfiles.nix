@@ -3,12 +3,21 @@
 {
   options = {
     dotfiles.neovim.enable = lib.mkEnableOption "Enables neovim configuration";
+    dotfiles.hyprland.enable = lib.mkEnableOption "Enables hyprland configuration";
   };
 
-  config = lib.mkIf config.dotfiles.neovim.enable {
-    home.file.".config/nvim" = {
-      source = ../dotfiles/nvim;
-      recursive = true;
-    };
-  };
+  config = lib.mkMerge [
+    (lib.mkIf config.dotfiles.neovim.enable {
+      home.file.".config/nvim" = {
+        source = ../dotfiles/nvim;
+        recursive = true;
+      };
+    })
+    (lib.mkIf config.dotfiles.hyprland.enable {
+      home.file.".config/hyprland" = {
+        source = ../dotfiles/hyprland;
+        recursive = true;
+      };
+    })
+  ];
 }
