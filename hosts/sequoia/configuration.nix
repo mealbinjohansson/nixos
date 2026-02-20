@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports =
@@ -50,9 +50,10 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       git
-      neovim
       brightnessctl
       fastfetch
+      tmux
+      inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
     ];
   };
 

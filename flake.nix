@@ -6,17 +6,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     dotfiles = {
-      url = "git+https://github.com/mealbinjohansson/dotfiles.git";
+      url = "github:mealbinjohansson/dotfiles";
       flake = false;
     };
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+    };
   };
-  outputs = inputs@{ self, nixpkgs, home-manager, dotfiles, ... }: {
+  outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.sequoia = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/sequoia/configuration.nix
-	./nixosModules
-	home-manager.nixosModules.home-manager
+        ./nixosModules
+        inputs.home-manager.nixosModules.home-manager
       ];
     };
     homeManagerModules.default = ./homeManagerModules;
