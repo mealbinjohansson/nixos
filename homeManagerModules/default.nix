@@ -5,7 +5,6 @@
     # Add modules by importing them relatively ./module.nix...
     ./albin.nix
     ./dotfiles.nix
-    ./hyprland.nix
     ./neovim.nix
   ];
 

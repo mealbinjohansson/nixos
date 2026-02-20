@@ -14,7 +14,7 @@
       };
     })
     (lib.mkIf config.dotfiles.hyprland.enable {
-      home.file.".config/hypr" = {
+      home.file.".config/hyprland" = {
         source = ../dotfiles/hyprland;
         recursive = true;
       };

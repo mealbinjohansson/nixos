@@ -9,7 +9,6 @@
 
   # Modules
   neovim.enable = true;
-  hyprland.enable = true;
   dotfiles.neovim.enable = true;
   dotfiles.hyprland.enable = true;
 }
