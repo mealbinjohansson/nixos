@@ -18,6 +18,14 @@
         inputs.home-manager.nixosModules.home-manager
       ];
     };
+    nixosConfigurations.spruce = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/spruce/configuration.nix
+        ./nixosModules
+        inputs.home-manager.nixosModules.home-manager
+      ];
+    };
     homeManagerModules.default = ./homeManagerModules;
   };
 }
