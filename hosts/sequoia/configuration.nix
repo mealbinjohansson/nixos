@@ -55,6 +55,7 @@
       tmux
       opencode
       vim
+      ghostty
     ];
   };
 
@@ -72,4 +73,5 @@
     enable = true;
     file = ./home.nix;
   };
+  programs.firefox.enable = true;
 }
