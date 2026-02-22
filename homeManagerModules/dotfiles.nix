@@ -9,8 +9,7 @@
   config = lib.mkMerge [
     (lib.mkIf config.dotfiles.neovim.enable {
       home.file.".config/nvim" = {
-        source = ../dotfiles/nvim;
-        recursive = true;
+        source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/nvim";
       };
     })
     (lib.mkIf config.dotfiles.hyprland.enable {
@@ -23,12 +22,10 @@
         input-fonts
       ];
       home.file.".config/hypr" = {
-        source = ../dotfiles/hypr;
-        recursive = true;
+        source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/hypr";
       };
       home.file.".config/rofi" = {
-        source = ../dotfiles/rofi;
-        recursive = true;
+        source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/rofi";
       };
     })
   ];
