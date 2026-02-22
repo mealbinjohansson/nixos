@@ -10,6 +10,7 @@
     (lib.mkIf config.dotfiles.neovim.enable {
       home.file.".config/nvim" = {
         source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/nvim";
+        force = true;
       };
     })
     (lib.mkIf config.dotfiles.hyprland.enable {
@@ -23,9 +24,11 @@
       ];
       home.file.".config/hypr" = {
         source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/hypr";
+        force = true;
       };
       home.file.".config/rofi" = {
         source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/rofi";
+        force = true;
       };
     })
   ];
