@@ -1,4 +1,4 @@
-{ inputs, lib, config, ... }:
+{ inputs, pkgs, lib, config, ... }:
 
 {
   options = {
@@ -14,8 +14,20 @@
       };
     })
     (lib.mkIf config.dotfiles.hyprland.enable {
+      nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+        "input-fonts"
+      ];
+      nixpkgs.config.input-fonts.acceptLicense = true;
+      home.packages = with pkgs; [
+        rofi
+        input-fonts
+      ];
       home.file.".config/hypr" = {
         source = ../dotfiles/hypr;
+        recursive = true;
+      };
+      home.file.".config/rofi" = {
+        source = ../dotfiles/rofi;
         recursive = true;
       };
     })
