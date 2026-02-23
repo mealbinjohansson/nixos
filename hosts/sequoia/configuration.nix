@@ -43,36 +43,47 @@
   # Configure console keymap
   console.keyMap = "sv-latin1";
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # Define a user account
   users.users.albin = {
     isNormalUser = true;
     description = "Albin";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      git
-      brightnessctl
-      fastfetch
-      tmux
-      opencode
-      vim
-      ghostty
-      signal-desktop
-    ];
   };
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [];
 
   system.stateVersion = "25.11";
 
-  # NOTE: My addition
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  ################
+  # My additions #
+  ################
+
+  # NixOS modules
+  base.enable = true;
+  home-manager.enable = true;
   hyprland.enable = true;
-  home-manager = {
-    enable = true;
-    file = ./home.nix;
+
+  # Home manager modules
+  home-manager.users."albin" = {
+    albin.enable = true;
+    neovim.enable = true;
+    hyprland.enable = true;
+    rofi.enable = true;
+    bash.enable = true;
   };
+
+  # Packages
   programs.firefox.enable = true;
+  users.users.albin.packages = with pkgs; [
+    git
+    brightnessctl
+    fastfetch
+    tmux
+    opencode
+    vim
+    ghostty
+    signal-desktop
+  ];
 }
