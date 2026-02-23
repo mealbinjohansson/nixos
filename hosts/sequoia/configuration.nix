@@ -56,6 +56,7 @@
       opencode
       vim
       ghostty
+      signal-desktop
     ];
   };
 
