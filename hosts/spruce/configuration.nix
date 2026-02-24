@@ -63,6 +63,7 @@
   base.enable = true;
   home-manager.enable = true;
   hyprland.enable = true;
+  nfs.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {
