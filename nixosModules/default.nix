@@ -6,6 +6,7 @@
     ./base.nix
     ./hyprland.nix
     ./home-manager.nix
+    ./gnupg.nix
   ];
    
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

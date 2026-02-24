@@ -64,6 +64,7 @@
   base.enable = true;
   home-manager.enable = true;
   hyprland.enable = true;
+  gnupg.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {
@@ -85,5 +86,6 @@
     vim
     ghostty
     signal-desktop
+    pass
   ];
 }

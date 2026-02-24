@@ -81,6 +81,7 @@
     opencode
     vim
     ghostty
+    pass
   ];
 
   # Graphics
