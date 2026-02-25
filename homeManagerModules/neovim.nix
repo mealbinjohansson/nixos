@@ -6,6 +6,12 @@
   };
 
   config = lib.mkIf config.neovim.enable {
+    home.packages = with pkgs; [
+      fzf
+      lua-language-server
+      ripgrep
+      vtsls
+    ];
     home.file.".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/nvim";
       force = true;
@@ -18,9 +24,6 @@
       extraPackages = with pkgs; [
         gcc
         gnumake
-        fzf
-        ripgrep
-        lua-language-server
       ];
     };
   };
