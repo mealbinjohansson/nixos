@@ -89,6 +89,6 @@
     ghostty
     signal-desktop
     pass
+    ticktick
   ];
-
 }
