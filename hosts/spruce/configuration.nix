@@ -64,6 +64,7 @@
   home-manager.enable = true;
   hyprland.enable = true;
   nfs.enable = true;
+  tailscale.enable = true;
   gnupg.enable = true;
 
   # Home manager modules
