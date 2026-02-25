@@ -86,7 +86,7 @@
     tmux
     opencode
     vim
-    ghostty
+    kitty
     signal-desktop
     pass
     ticktick
