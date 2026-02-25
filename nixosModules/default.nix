@@ -9,6 +9,7 @@
     ./gnupg.nix
     ./nfs.nix
     ./tailscale.nix
+    ./git.nix
   ];
    
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

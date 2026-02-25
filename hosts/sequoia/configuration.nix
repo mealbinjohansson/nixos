@@ -67,6 +67,7 @@
   gnupg.enable = true;
   nfs.enable = true;
   tailscale.enable = true;
+  git.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {
