@@ -42,13 +42,6 @@
   # Configure console keymap
   console.keyMap = "sv-latin1";
 
-  # Define a user account
-  users.users.albin = {
-    isNormalUser = true;
-    description = "Albin Johansson";
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
-
   # Allow unfree packages
 
   environment.systemPackages = with pkgs; [];
@@ -67,6 +60,7 @@
   tailscale.enable = true;
   gnupg.enable = true;
   git.enable = true;
+  albin.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {

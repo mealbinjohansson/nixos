@@ -10,6 +10,7 @@
     ./nfs.nix
     ./tailscale.nix
     ./git.nix
+    ./albin.nix
   ];
    
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
