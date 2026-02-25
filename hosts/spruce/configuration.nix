@@ -64,6 +64,7 @@
   home-manager.enable = true;
   hyprland.enable = true;
   nfs.enable = true;
+  gnupg.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {
@@ -75,6 +76,7 @@
   };
 
   # Packages
+  programs.firefox.enable = true;
   users.users.albin.packages = with pkgs; [
     fastfetch
     git
@@ -83,6 +85,7 @@
     vim
     ghostty
     pass
+    signal-desktop
   ];
 
   # Graphics
