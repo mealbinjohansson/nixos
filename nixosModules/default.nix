@@ -8,6 +8,7 @@
     ./home-manager.nix
     ./gnupg.nix
     ./nfs.nix
+    ./tailscale.nix
   ];
    
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -7,7 +7,7 @@
 
   config = lib.mkIf config.nfs.enable {
     fileSystems."/mnt/nas" = {
-      device = "192.168.7.235:/tank/data";
+      device = "100.65.115.5:/tank/data";
       fsType = "nfs";
       options = [ "x-systemd.automount" "noauto" "x-systemd.idle-timeout=600" ];
     };

@@ -66,6 +66,7 @@
   hyprland.enable = true;
   gnupg.enable = true;
   nfs.enable = true;
+  tailscale.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {
