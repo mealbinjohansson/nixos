@@ -69,6 +69,7 @@
     hyprland.enable = true;
     rofi.enable = true;
     bash.enable = true;
+    tmux.enable = true;
   };
 
   # Packages

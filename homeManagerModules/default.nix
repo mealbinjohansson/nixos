@@ -8,6 +8,7 @@
     ./neovim.nix
     ./bash.nix
     ./rofi.nix
+    ./tmux.nix
   ];
 
   programs.home-manager.enable = true;
