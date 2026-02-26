@@ -86,5 +86,7 @@
     signal-desktop
     pass
     ticktick
+    gemini-cli
+    jetbrains.rider
   ];
 }

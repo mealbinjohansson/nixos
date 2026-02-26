@@ -11,6 +11,7 @@
       lua-language-server
       ripgrep
       vtsls
+      roslyn-ls
     ];
     home.file.".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/nvim";

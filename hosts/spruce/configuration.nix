@@ -84,6 +84,7 @@
     pass
     signal-desktop
     ticktick
+    jetbrains.rider
   ];
 
   # Graphics
