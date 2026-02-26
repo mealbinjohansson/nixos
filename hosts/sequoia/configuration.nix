@@ -88,6 +88,6 @@
     pass
     ticktick
     gemini-cli
-    jetbrains.rider
+    dotnetCorePackages.dotnet_10.sdk
   ];
 }

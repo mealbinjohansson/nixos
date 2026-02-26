@@ -85,8 +85,7 @@
     pass
     signal-desktop
     ticktick
-    jetbrains.rider
-    docker
+    dotnetCorePackages.dotnet_10.sdk
   ];
 
   # Graphics
