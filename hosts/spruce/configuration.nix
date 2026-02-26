@@ -74,6 +74,7 @@
 
   # Packages
   programs.firefox.enable = true;
+  virtualisation.docker.enable = true;
   users.users.albin.packages = with pkgs; [
     fastfetch
     git
@@ -85,6 +86,7 @@
     signal-desktop
     ticktick
     jetbrains.rider
+    docker
   ];
 
   # Graphics

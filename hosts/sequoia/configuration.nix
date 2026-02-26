@@ -75,6 +75,7 @@
 
   # Packages
   programs.firefox.enable = true;
+  virtualisation.docker.enable = true;
   users.users.albin.packages = with pkgs; [
     git
     brightnessctl
