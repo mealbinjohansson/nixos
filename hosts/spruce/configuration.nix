@@ -87,6 +87,7 @@
     ticktick
     dotnetCorePackages.dotnet_10.sdk
     gemini-cli
+    zathura
   ];
 
   # Graphics
