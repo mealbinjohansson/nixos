@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports =
@@ -75,6 +75,11 @@
   # Packages
   programs.firefox.enable = true;
   virtualisation.docker.enable = true;
+  services.mullvad-vpn = {
+    enable = true;
+    package = pkgs.mullvad-vpn;
+  };
+
   users.users.albin.packages = with pkgs; [
     fastfetch
     git
