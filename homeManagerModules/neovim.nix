@@ -4,14 +4,19 @@
   options = {
     neovim.enable = lib.mkEnableOption "Enables neovim module";
   };
-
+	
   config = lib.mkIf config.neovim.enable {
+    nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
     home.packages = with pkgs; [
       fzf
       lua-language-server
       ripgrep
       vtsls
       roslyn-ls
+      basedpyright
+      ruff
+      nixd
+      alejandra
     ];
     home.file.".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/nvim";
