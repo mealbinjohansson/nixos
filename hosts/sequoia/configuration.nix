@@ -1,10 +1,7 @@
-{ inputs, config, pkgs, ... }:
-
-{
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+{pkgs, ...}: {
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -42,10 +39,6 @@
 
   # Configure console keymap
   console.keyMap = "sv-latin1";
-
-  # Allow unfree packages
-
-  environment.systemPackages = with pkgs; [];
 
   system.stateVersion = "25.11";
 

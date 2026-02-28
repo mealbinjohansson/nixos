@@ -1,6 +1,8 @@
-{ lib, config, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     nfs.enable = lib.mkEnableOption "Enables nfs client mounting";
   };
@@ -9,8 +11,8 @@
     fileSystems."/mnt/nas" = {
       device = "100.65.115.5:/tank/data";
       fsType = "nfs";
-      options = [ "x-systemd.automount" "noauto" "x-systemd.idle-timeout=600" ];
+      options = ["x-systemd.automount" "noauto" "x-systemd.idle-timeout=600"];
     };
-    boot.supportedFilesystems = [ "nfs" ];
+    boot.supportedFilesystems = ["nfs"];
   };
 }

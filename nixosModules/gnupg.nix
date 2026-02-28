@@ -1,6 +1,9 @@
-{ pkgs, lib, config, ... }:
-
 {
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
     gnupg.enable = lib.mkEnableOption "Enables gnupg configuration";
   };

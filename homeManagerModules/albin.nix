@@ -1,6 +1,8 @@
-{ pkgs, lib, config, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     albin.enable = lib.mkEnableOption "Enables albin user";
   };

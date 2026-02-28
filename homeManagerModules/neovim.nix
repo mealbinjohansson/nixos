@@ -1,12 +1,16 @@
-{ inputs, pkgs, lib, config, ... }:
-
 {
+  inputs,
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
     neovim.enable = lib.mkEnableOption "Enables neovim module";
   };
-	
+
   config = lib.mkIf config.neovim.enable {
-    nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+    nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
     home.packages = with pkgs; [
       fzf
       lua-language-server
@@ -26,7 +30,7 @@
       enable = true;
       package = inputs.neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default;
       defaultEditor = true;
-      plugins = with pkgs.vimPlugins; [ telescope-fzf-native-nvim ];
+      plugins = with pkgs.vimPlugins; [telescope-fzf-native-nvim];
       extraPackages = with pkgs; [
         gcc
         gnumake

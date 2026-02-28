@@ -1,6 +1,9 @@
-{ lib, config, pkgs, ... }:
-
 {
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
   options = {
     rofi.enable = lib.mkEnableOption "Enables rofi dotfiles";
   };

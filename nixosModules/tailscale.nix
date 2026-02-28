@@ -1,6 +1,8 @@
-{ lib, config, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     tailscale.enable = lib.mkEnableOption "Enables tailscale networking";
   };

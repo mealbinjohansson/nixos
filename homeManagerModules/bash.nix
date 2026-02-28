@@ -1,6 +1,8 @@
-{ pkgs, lib, config, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     bash.enable = lib.mkEnableOption "Enables neovim module";
   };

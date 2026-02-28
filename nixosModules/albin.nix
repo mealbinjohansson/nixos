@@ -1,6 +1,8 @@
-{ lib, config, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     albin.enable = lib.mkEnableOption "Enables albin user account";
   };
@@ -9,7 +11,7 @@
     users.users.albin = {
       isNormalUser = true;
       description = "Albin";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = ["networkmanager" "wheel"];
     };
   };
 }

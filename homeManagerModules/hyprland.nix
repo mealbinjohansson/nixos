@@ -1,6 +1,8 @@
-{ lib, config, pkgs, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     hyprland.enable = lib.mkEnableOption "Enables hyprland dotfiles";
   };

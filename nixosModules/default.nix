@@ -1,6 +1,4 @@
-{ pkgs, lib, ... }:
-
-{
+{...}: {
   imports = [
     # Add modules by importing them relatively ./module.nix...
     ./base.nix
@@ -12,8 +10,8 @@
     ./git.nix
     ./albin.nix
   ];
-   
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Enable modules by default using module.enable = lib.mkDefault true;
 }
