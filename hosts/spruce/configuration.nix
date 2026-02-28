@@ -91,6 +91,8 @@
     dotnetCorePackages.dotnet_10.sdk
     gemini-cli
     zathura
+    spotify
+    discord
   ];
 
   # Graphics
