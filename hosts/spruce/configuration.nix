@@ -68,11 +68,13 @@
     hyprland.enable = true;
     rofi.enable = true;
     bash.enable = true;
+    fish.enable = true;
     tmux.enable = true;
   };
 
   # Packages
   programs.firefox.enable = true;
+  programs.fish.enable = true;
   virtualisation.docker.enable = true;
   services.mullvad-vpn = {
     enable = true;

@@ -55,6 +55,7 @@
   tailscale.enable = true;
   git.enable = true;
   albin.enable = true;
+  fish.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {
@@ -68,6 +69,7 @@
 
   # Packages
   programs.firefox.enable = true;
+  programs.fish.enable = true;
   virtualisation.docker.enable = true;
   users.users.albin.packages = with pkgs; [
     git

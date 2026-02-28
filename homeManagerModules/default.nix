@@ -5,6 +5,7 @@
     ./hyprland.nix
     ./neovim.nix
     ./bash.nix
+    ./fish.nix
     ./rofi.nix
     ./tmux.nix
   ];

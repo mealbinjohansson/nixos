@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }: {
   options = {
@@ -12,6 +13,7 @@
       isNormalUser = true;
       description = "Albin";
       extraGroups = ["networkmanager" "wheel"];
+      shell = pkgs.fish;
     };
   };
 }
