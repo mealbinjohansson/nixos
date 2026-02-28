@@ -59,6 +59,7 @@
   gnupg.enable = true;
   git.enable = true;
   albin.enable = true;
+  pipewire.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {

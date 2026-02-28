@@ -9,6 +9,7 @@
     ./tailscale.nix
     ./git.nix
     ./albin.nix
+    ./pipewire.nix
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
