@@ -10,6 +10,7 @@
   config = lib.mkIf config.fish.enable {
     home.file.".config/fish" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/dotfiles/fish";
+      recursive = true;
       force = true;
     };
   };
