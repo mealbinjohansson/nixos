@@ -55,7 +55,6 @@
   tailscale.enable = true;
   git.enable = true;
   albin.enable = true;
-  fish.enable = true;
   bluetooth.enable = true;
 
   # Home manager modules
@@ -66,6 +65,7 @@
     rofi.enable = true;
     bash.enable = true;
     tmux.enable = true;
+    fish.enable = true;
   };
 
   # Packages
