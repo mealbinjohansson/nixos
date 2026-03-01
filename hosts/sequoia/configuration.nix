@@ -56,6 +56,7 @@
   git.enable = true;
   albin.enable = true;
   fish.enable = true;
+  bluetooth.enable = true;
 
   # Home manager modules
   home-manager.users."albin" = {

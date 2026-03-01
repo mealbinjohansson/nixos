@@ -10,6 +10,7 @@
     ./git.nix
     ./albin.nix
     ./pipewire.nix
+    ./bluetooth.nix
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
