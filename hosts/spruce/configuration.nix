@@ -76,6 +76,7 @@
   # Packages
   programs.firefox.enable = true;
   programs.fish.enable = true;
+  services.openssh.enable = true;
   virtualisation.docker.enable = true;
   services.mullvad-vpn = {
     enable = true;
