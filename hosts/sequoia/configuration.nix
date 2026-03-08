@@ -86,5 +86,6 @@
     gemini-cli
     dotnetCorePackages.dotnet_10.sdk
     zathura
+    btop
   ];
 }

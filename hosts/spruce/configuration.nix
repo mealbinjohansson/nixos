@@ -98,6 +98,7 @@
     zathura
     spotify
     discord
+    btop
   ];
 
   # Graphics
