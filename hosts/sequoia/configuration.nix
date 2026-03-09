@@ -85,7 +85,7 @@
     ticktick
     gemini-cli
     dotnetCorePackages.dotnet_10.sdk
-    zathura
+    sioyek
     btop
   ];
 }

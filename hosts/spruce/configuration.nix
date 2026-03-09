@@ -95,7 +95,7 @@
     ticktick
     dotnetCorePackages.dotnet_10.sdk
     gemini-cli
-    zathura
+    sioyek
     spotify
     discord
     btop
