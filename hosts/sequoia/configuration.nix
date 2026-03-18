@@ -87,5 +87,6 @@
     dotnetCorePackages.dotnet_10.sdk
     sioyek
     btop
+    alsamixer
   ];
 }
