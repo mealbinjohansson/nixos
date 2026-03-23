@@ -96,6 +96,7 @@
     dotnetCorePackages.dotnet_10.sdk
     gemini-cli
     sioyek
+    zathura
     spotify
     discord
     btop
