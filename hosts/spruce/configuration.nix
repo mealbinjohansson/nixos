@@ -100,6 +100,7 @@
     spotify
     discord
     btop
+    codex
   ];
 
   # Graphics
