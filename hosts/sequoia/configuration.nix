@@ -88,5 +88,6 @@
     sioyek
     btop
     alsa-utils
+    codex
   ];
 }
