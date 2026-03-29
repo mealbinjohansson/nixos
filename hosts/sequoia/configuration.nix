@@ -89,5 +89,6 @@
     btop
     alsa-utils
     codex
+    parsec-bin
   ];
 }
