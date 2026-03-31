@@ -101,6 +101,9 @@
     discord
     btop
     codex
+    jq
+    grim
+    slurp
   ];
 
   # Graphics
