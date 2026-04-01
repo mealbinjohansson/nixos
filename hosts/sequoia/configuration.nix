@@ -90,5 +90,7 @@
     alsa-utils
     codex
     parsec-bin
+    vscode
+    prettier
   ];
 }
