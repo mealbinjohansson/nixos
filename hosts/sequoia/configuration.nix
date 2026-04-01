@@ -92,5 +92,6 @@
     parsec-bin
     vscode
     prettier
+    (chromium.override {enableWideVine = true;})
   ];
 }
