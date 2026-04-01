@@ -105,6 +105,7 @@
     grim
     slurp
     vscode
+    prettier
   ];
 
   # Graphics
