@@ -104,6 +104,7 @@
     jq
     grim
     slurp
+    vscode
   ];
 
   # Graphics
