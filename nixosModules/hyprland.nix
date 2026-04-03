@@ -12,7 +12,7 @@
     programs.hyprland.enable = true;
     programs.hyprlock.enable = true;
     users.users.albin.packages = with pkgs; [
-      swww
+      awww
       apple-cursor
     ];
   };
