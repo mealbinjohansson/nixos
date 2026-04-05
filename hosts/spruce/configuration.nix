@@ -106,6 +106,7 @@
     slurp
     vscode
     prettier
+    kdePackages.okular
   ];
 
   # Graphics

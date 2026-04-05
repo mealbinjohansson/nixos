@@ -93,5 +93,6 @@
     vscode
     prettier
     (chromium.override {enableWideVine = true;})
+    kdePackages.okular
   ];
 }
