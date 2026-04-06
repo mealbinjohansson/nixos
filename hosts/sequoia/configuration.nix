@@ -72,6 +72,7 @@
   programs.firefox.enable = true;
   programs.fish.enable = true;
   virtualisation.docker.enable = true;
+  services.mullvad-vpn.enable = true;
   users.users.albin.packages = with pkgs; [
     git
     brightnessctl
