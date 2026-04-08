@@ -107,6 +107,7 @@
     vscode
     prettier
     kdePackages.okular
+    unzip
   ];
 
   # Graphics
