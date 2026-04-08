@@ -28,6 +28,8 @@
     };
     programs.neovim = {
       enable = true;
+      withPython3 = false;
+      withRuby = false;
       package = inputs.neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default;
       defaultEditor = true;
       plugins = with pkgs.vimPlugins; [telescope-fzf-native-nvim];
