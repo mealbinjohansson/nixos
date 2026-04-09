@@ -108,6 +108,7 @@
     prettier
     kdePackages.okular
     unzip
+    anki-bin
   ];
 
   # Graphics
