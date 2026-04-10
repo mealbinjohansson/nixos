@@ -109,6 +109,7 @@
     kdePackages.okular
     unzip
     anki-bin
+    ripgrep-all
   ];
 
   # Graphics
