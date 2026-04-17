@@ -96,5 +96,7 @@
     (chromium.override {enableWideVine = true;})
     kdePackages.okular
     unzip
+    remmina
+    openfortivpn
   ];
 }

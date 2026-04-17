@@ -110,6 +110,8 @@
     unzip
     anki-bin
     ripgrep-all
+    remmina
+    openfortivpn
   ];
 
   # Graphics
