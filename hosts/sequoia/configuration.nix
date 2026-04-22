@@ -98,5 +98,7 @@
     unzip
     remmina
     openfortivpn
+    grim
+    slurp
   ];
 }
